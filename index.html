@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskBlitz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Task<span style="color:#6366f1">Blitz</span></h1>
+
+  <div class="container">
+    <!-- Dark Mode Toggle -->
+    <div class="theme-toggle">
+      <label class="switch">
+        <input type="checkbox" id="toggle-theme">
+        <span class="slider"></span>
+      </label>
+      <span id="theme-label">🌞 Light Mode</span>
+    </div>
+
+    <!-- Input -->
+    <input type="text" id="task-input" placeholder="Add a New Task + Enter" />
+
+    <!-- Filter and Clear -->
+    <div class="filter-options">
+      <span id="all" class="active">All</span>
+      <span id="pending">Pending</span>
+      <span id="completed">Completed</span>
+      <button id="clear-all">Clear All</button>
+    </div>
+
+    <!-- Task List -->
+    <ul id="task-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
